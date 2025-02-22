@@ -16,8 +16,9 @@ btn.addEventListener("click", function () {
 });
 
 ul.addEventListener("click", function (event) {
-  if (event.target.nodename == "BUTTON") {
+  if (event.target.nodeName == "BUTTON") {
     let listItem = event.target.parentElement;
     listItem.remove();
+    
   }
 });
